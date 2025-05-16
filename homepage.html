@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VerifSafehouse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🔐 VerifSafehouse</h1>
+    <nav>
+        <a href="dotbreathing.html">DotBreathing</a> |
+        <a href="paxect.html">Paxect Interface</a> |
+        <a href="keymaker.html">Keymaker Engine</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="intro">
+        <h2>AI Hybrid DotBreathing</h2>
+        <p>A lightweight, autonomous security system that protects itself without disturbing alerts.</p>
+        <div id="heartbeat" class="heartbeat">[AI] Heartbeat: .</div>
+    </section>
+
+    <section class="features">
+        <h3>Features</h3>
+        <ul>
+            <li>✔️ Lightweight AI Model</li>
+            <li>✔️ No Disturbing Notifications</li>
+            <li>✔️ Self-Healing Logic</li>
+            <li>✔️ Suitable for IoT & Smart Appliances</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 VerifSafehouse – AI Hybrid Security System Technique</p>
+</footer>
+
+<script>
+    const heartbeat = document.getElementById("heartbeat");
+    setInterval(() => {
+        const statusOptions = [".", "..", "...."];
+        const status = statusOptions[Math.floor(Math.random() * statusOptions.length)];
+        heartbeat.innerText = "[AI] Heartbeat: " + status;
+    }, 1000);
+</script>
+
+</body>
+</html>

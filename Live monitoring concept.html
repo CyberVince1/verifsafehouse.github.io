@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paxect Interface</title>
+</head>
+<body>
+
+<header>
+    <h1>📊 Paxect Interface</h1>
+    <nav>
+        <a href="index.html">← Back to home</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Live Heartbeat Monitoring</h2>
+        <p>The Paxect Interface shows what DotBreathing does – only active when needed.</p>
+        <p>Like a life monitor:</p>
+        <pre id="heartbeat">
+[AI] Heartbeat: .
+        </pre>
+    </section>
+
+    <section>
+        <h2>Why Paxect Works</h2>
+        <ul>
+            <li>🔹 Calm interface</li>
+            <li>🔸 Visual feedback without alarms</li>
+            <li>🔹 Ready for live updates</li>
+        </ul>
+    </section>
+</main>
+
+<script>
+    const heartbeat = document.getElementById("heartbeat");
+    setInterval(() => {
+        const statusOptions = ["normal", "suspicious", "critical"];
+        const status = statusOptions[Math.floor(Math.random() * statusOptions.length)];
+
+        if (status === "normal") {
+            heartbeat.innerText = "[AI] Heartbeat: .";
+        } else if (status === "suspicious") {
+            heartbeat.innerText = "[AI] Heartbeat: ..";
+        } else {
+            heartbeat.innerText = "[AI] Heartbeat: ....";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keymaker Engine</title>
+</head>
+<body>
+
+<header>
+    <h1>🔑 Keymaker Engine</h1>
+    <nav>
+        <a href="index.html">← Back to home</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Physical & Digital Access Control</h2>
+        <p>Only those with the right key can access logs or manually intervene.</p>
+        <input type="text" id="keyInput" placeholder="Enter access key">
+        <button onclick="checkKey()">Request Access</button>
+        <p id="result"></p>
+    </section>
+</main>
+
+<script>
+    function checkKey() {
+        const correctKey = "dotbreathing2025";
+        const input = document.getElementById("keyInput").value;
+        const result = document.getElementById("result");
+
+        if (input === correctKey) {
+            result.textContent = "🔓 Access Granted";
+        } else {
+            result.textContent = "🚫 Unknown Key";
+        }
+    }
+</script>
+
+</body>
+</html>
