@@ -1,2 +1,2 @@
 # verifsafehouse.github.io
- lichtgewicht AI-beveiligingssysteem dat zichzelf bewaakt en herstelt 
+"A lightweight AI-powered security system that continuously monitors itself and self-heals when needed." 
